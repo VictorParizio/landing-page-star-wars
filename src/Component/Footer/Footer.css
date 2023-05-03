@@ -1,0 +1,57 @@
+.footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer p {
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.footer .empresa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 258px;
+    height: 47px;
+    left: calc(50% - 129px);
+    bottom: -25px;
+    background: #E9FF00;
+}
+
+.footer .empresa h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.footer .attribution {
+    position: absolute;
+    left: 0;
+    bottom: -75px;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    padding: 13px;
+}
+
+.footer .attribution a {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #E9FF00;
+}
+
+@media (max-width: 900px){
+    .footer{
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+    }
+}

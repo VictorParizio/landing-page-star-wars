@@ -1,0 +1,104 @@
+.subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscription h2 {
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.subscription span {
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.subscription form {
+    display: flex;
+    padding: 0px;
+    gap: 16px;
+}
+
+.subscription form input {
+    padding: 10px 16px;
+    width: 244px;
+    height: 42px;
+    border: 1px solid #E9FF00;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.subscription form input.invalidate {
+    border: 1px solid #ff0000;
+}
+
+.subscription form .error {
+    color: #ff0000;
+}
+
+.subscription form button {
+    width: 72px;
+    height: 42px;
+    color: black;
+    font-weight: 800;
+    background: #E9FF00 url(../../images/seta.svg) no-repeat center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.subscription form button:hover {
+    box-shadow: 0 0 20px rgb(255, 255, 0);
+}
+
+@media (max-width: 1130px) {
+    .subscription {
+        justify-content: space-around;
+    }
+
+    .subscription form {
+        display: flex;
+    }
+}
+
+@media (max-width: 920px) {
+    .subscription {
+        display: grid;
+        justify-content: center;
+    }
+
+    .subscription h2 {
+        font-size: 40px;
+    }
+
+    .subscription span {
+        font-size: 49px;
+        display: block;
+        text-align: center;
+    }
+
+    .subscription form {
+        margin-top: 40px;
+        padding: 0px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 720px) {
+    .subscription form {
+        margin-top: 40px;
+        display: grid;
+        padding: 0px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .subscription h2 {
+        font-size: 35px;
+    }
+}

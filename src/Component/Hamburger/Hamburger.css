@@ -1,0 +1,86 @@
+.mobile,
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .mobile,
+    #btn-mobile {
+        display: flex;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer {
+        width: 20px;
+        border-top: 2px solid;
+    }
+    
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    
+    nav.active #hamburguer {
+        border-top-color: transparent;
+        margin-top: 40px;
+    }
+
+    nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    nav.active #btn-mobile {
+        position: absolute;
+        top: 0;
+        right: 80px;
+        z-index: 1;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        width: 0%;
+        transition: 0.6s;
+        top: 0px;
+        right: 0;
+        background: black url(../../images/claws.svg) no-repeat -145px -30px / 70%;
+        height: 100vh;
+        padding-top: 150px;
+        visibility: hidden;
+        overflow-x: hidden;
+
+    }
+
+    nav.active .menu {
+        display: flex;
+        width: 360px;
+        height: 550px;
+        visibility: visible;
+        gap: 45px;
+    }
+
+    nav .menu li a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 450px){
+    nav.active #btn-mobile{
+        right: 30px;
+    }
+}

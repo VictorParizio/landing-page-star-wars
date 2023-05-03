@@ -1,0 +1,12 @@
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background:  rgba(136, 136, 136, 0.5) url(../../images/arrow.svg) no-repeat center;
+    transform: rotate(270deg);
+    cursor: pointer;
+}

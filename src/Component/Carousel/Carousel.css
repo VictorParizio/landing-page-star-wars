@@ -1,0 +1,127 @@
+.carousel {
+    padding: 0;
+    overflow: hidden;
+}
+
+.carousel .info {
+    margin: 228px 80px;
+}
+
+.carousel .info h2 {
+    width: 550px;
+    font-weight: 800;
+    font-size: 56px;
+    padding-left: 5px;
+    border-left: 8px solid #E9FF00;
+}
+
+.carousel .info h2~p {
+    font-size: 20px;
+    width: 638px;
+    padding-top: 10px;
+}
+
+.carousel .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.carousel .navigation input[type="radio"] {
+    margin-right: 5px;
+    appearance: none;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carousel .navigation input[type="radio"]:checked {
+    background-color: #E9FF00;
+    width: 15px;
+    height: 15px;
+}
+
+.carousel .navigation button {
+    background: url(../../images/arrow.svg) no-repeat center;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    border: none;
+}
+
+.carousel .navigation button:nth-child(1) {
+    rotate: 180deg;
+}
+
+@media (max-width: 740px) {
+    .carousel .info {
+        margin: 228px 35px;
+    }
+
+    .carousel .info h2 {
+        width: 300px;
+        font-size: 30px;
+    }
+
+    .carousel .info h2~p {
+        font-size: 14px;
+        width: 295px;
+    }
+}
+
+.slide-animado {
+    -webkit-animation-name: auto-slide;
+    -moz-animation-name: auto-slide;
+    animation-name: auto-slide;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+@-webkit-keyframes auto-slide {
+    from {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes auto-slide {
+    from {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes auto-slide {
+    from {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
