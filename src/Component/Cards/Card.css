@@ -1,13 +1,5 @@
-.cards {
-    background: url(../../images/claws.svg) no-repeat;
-}
-
 .cards h2 {
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 58px;
-    text-align: center;
-    margin: 48px 0 150px;
+    margin-bottom: 150px;
 }
 
 .cards .container {
@@ -58,32 +50,42 @@
     cursor: pointer;
 }
 
-@media (max-width: 1256px) {
-    .cards .container {
-        gap: 20px;
-    }
-}
-
 @media (max-width: 740px) {
+    .cards{
+        padding: 30px;
+    }
     .cards h2 {
         font-size: 40px;
     }
 
     .cards .container {
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-gap: 100px 40px;
     }
 }
 
 @media (max-width: 500px) {
-    .cards {
-        background: url(../../images/claws.svg) no-repeat -115px 620px / 100%;
-    }
-
     .cards h2 {
         font-size: 26px;
-        margin-top: 0px;
+        margin: 0 0 90px;
+    }
+
+    .cards .container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-gap: 80px 20px;
+    }
+
+    .cards .container .card {
+        width: 140px;
+        height: 160px;
+    }
+
+    .cards .container .card img {
+        width: 140px;
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    .cards .container .card h3 {
+        display: none;
     }
 }

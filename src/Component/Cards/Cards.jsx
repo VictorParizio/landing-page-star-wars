@@ -15,13 +15,13 @@ export default function Cards() {
 
     return (
         <section className="cards">
-            <h2 id="cards">Personagens</h2>
+            <h2 id="cards">Characters</h2>
             <div className="container">
                 {peoples.map((people, index) => (
                     <div className="card" key={index}>
-                        <img src={`https://starwars-visualguide.com/assets/img/characters/${[index + 1]}.jpg`} alt={`Capa do filme ${people.title}`} />
+                        <img src={`https://starwars-visualguide.com/assets/img/characters/${[index + 1]}.jpg`} alt={`Character: ${people.title}`} />
                         <h3>{people.name}</h3>
-                        <button>Saiba Mais!</button>
+                        <button>information!</button>
                     </div>
                 ))}
             </div>

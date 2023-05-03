@@ -22,3 +22,9 @@ section {
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 500px) {
+    section {
+        padding: 40px 30px;
+    }
+}
