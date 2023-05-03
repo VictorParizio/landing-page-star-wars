@@ -30,10 +30,6 @@
 }
 
 @media (max-width: 440px) {
-    .banner {
-        height: 100vh;
-    }
-
     .banner .img {
         background: url(../../images/Star-Wars.jpg) no-repeat center 25% / 350%;
         height: 90vh;
