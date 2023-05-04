@@ -70,14 +70,19 @@
     }
 }
 
+.carousel{
+    position: absolute;
+    z-index: -1;
+}
+
 .slide-animado {
     -webkit-animation-name: auto-slide;
     -moz-animation-name: auto-slide;
     animation-name: auto-slide;
 
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
 
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);

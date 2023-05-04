@@ -43,7 +43,7 @@ export default function Carousel() {
   };
 
   const startInterval = () => {
-    const id = setInterval(handleNextSlide, 3000);
+    const id = setInterval(handleNextSlide, 5000);
     setIntervalId(id);
   };
 
@@ -66,7 +66,7 @@ export default function Carousel() {
       slideRef.current.classList.add('slide-animado');
       setTimeout(() => {
         slideRef.current.classList.remove('slide-animado');
-      }, 1000);
+      }, 2000);
     }
   }, [currentSlide]);
 
