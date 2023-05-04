@@ -3,16 +3,16 @@ import './Carousel.css'
 
 const slides = [
   {
-    title: "Lorem ipsum dolor sit amet 1",
-    description: "Quisque cursus nunc urna, eget ultricies orci accumsan at. Cras metus nibh, viverra vitae erat ut, lacinia interdum nisl. 1"
+    title: "The Rise of Darth Vader:",
+    description: "Darth Vader, formerly known as Anakin Skywalker, began his journey as a Jedi but was eventually seduced by the dark side of the Force. He has become one of the most iconic villains and a symbol of oppression and tyranny across the galaxy."
   },
   {
-    title: "Lorem ipsum dolor sit amet 2",
-    description: "Quisque cursus nunc urna, eget ultricies orci accumsan at. Cras metus nibh, viverra vitae erat ut, lacinia interdum nisl. 2"
+    title: "The Death Star's Destruction:",
+    description: "the Rebel Alliance faced the tyranny of the Galactic Empire. The decisive moment of the war was when Luke Skywalker, piloting an X-wing fighter, managed to fire a torpedo that destroyed the Death Star."
   },
   {
-    title: "Lorem ipsum dolor sit amet 3",
-    description: "Quisque cursus nunc urna, eget ultricies orci accumsan at. Cras metus nibh, viverra vitae erat ut, lacinia interdum nisl. 3"
+    title: "Rey's Journey:",
+    description: "The central character of the latest trilogy, Rey discovers Force abilities, finds her place in the universe, and fights for her friends and allies against the First Order led by Kylo Ren."
   }
 ];
 

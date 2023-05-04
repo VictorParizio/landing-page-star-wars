@@ -1,30 +1,38 @@
 .carousel {
-    padding: 0;
     overflow: hidden;
 }
 
 .carousel .info {
-    margin: 228px 80px;
+    margin-top: 350px;
+    width: 600px;
+    height: 100px;
+    position: relative;
 }
 
-.carousel .info h2 {
-    width: 550px;
-    font-weight: 800;
-    font-size: 56px;
+.carousel .info .slide {
+    position: absolute;
+    z-index: -1;
+    top: -150px;
+}
+
+.carousel .info .slide h2 {
+    font-size: 40px;
+    text-align: start;
     padding-left: 5px;
     border-left: 8px solid #E9FF00;
 }
 
-.carousel .info h2~p {
+.carousel .info .slide h2~p {
     font-size: 20px;
-    width: 638px;
     padding-top: 10px;
 }
 
 .carousel .navigation {
+    position: absolute;
+    width: 600px;
     display: flex;
     justify-content: space-between;
-    padding-top: 90px;
+    padding-top: 100px;
 }
 
 .carousel .navigation input[type="radio"] {
@@ -34,6 +42,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .carousel .navigation input[type="radio"]:checked {
@@ -56,23 +65,39 @@
 
 @media (max-width: 740px) {
     .carousel .info {
-        margin: 228px 35px;
+        width: 450px;
     }
 
-    .carousel .info h2 {
-        width: 300px;
+    .carousel .info .slide h2 {
         font-size: 30px;
     }
 
-    .carousel .info h2~p {
+    .carousel .info .slide h2~p {
         font-size: 14px;
-        width: 295px;
+    }
+
+    .carousel .navigation {
+        padding-top: 50px;
+        width: 450px;
     }
 }
 
-.carousel{
-    position: absolute;
-    z-index: -1;
+@media (max-width: 567px) {
+    .carousel .info {
+        width: 300px;
+    }
+
+    .carousel .info .slide h2 {
+        font-size: 30px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel .navigation {
+        padding-top: 100px;
+        width: 300px;
+    }
 }
 
 .slide-animado {
