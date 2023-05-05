@@ -60,15 +60,11 @@ export default function Films() {
             {showList && (
                 <div className="info">
                     {films.map((film, index) => (
-                        <div className="container" key={index}>
-                            <div className="img">
-                                <img src={`https://starwars-visualguide.com/assets/img/films/${[index + 1]}.jpg`} alt={`Capa do filme ${film.title}`} />
-                            </div>
-                            <div className="texts">
-                                <h3>{film.title}</h3>
-                                <div className="star"></div>
-                                <p>{film.opening_crawl}</p>
-                            </div>
+                        <div key={index}>
+                            <h3>{film.title}</h3>
+                            <div className="star"></div>
+                            <img src={`https://starwars-visualguide.com/assets/img/films/${[index + 1]}.jpg`} alt={`Capa do filme ${film.title}`} />
+                            <p>{film.opening_crawl}</p>
                         </div>
                     ))}
                 </div>
@@ -78,15 +74,11 @@ export default function Films() {
                 <>
                     <div className="info">
                         {films.length > 0 &&
-                            <div className="container">
-                                <div className="img">
-                                    <img src={`https://starwars-visualguide.com/assets/img/films/${currentSlide + 1}.jpg`} alt={films[currentSlide].title} />
-                                </div>
-
-                                <div className="texts">
-                                    <h3>{films[currentSlide].title}</h3>
-                                    <p>{films[currentSlide].opening_crawl}</p>
-                                </div>
+                            <div>
+                                <h3>{films[currentSlide].title}</h3>
+                                <div className="star"></div>
+                                <img src={`https://starwars-visualguide.com/assets/img/films/${currentSlide + 1}.jpg`} alt={films[currentSlide].title} />
+                                <p>{films[currentSlide].opening_crawl}</p>
                             </div>
                         }
                     </div>
