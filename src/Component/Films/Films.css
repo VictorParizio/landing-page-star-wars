@@ -5,38 +5,38 @@ h2 {
     text-align: center;
 }
 
-.evaluateds .info {
+.films .info {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 80px 40px;
 }
 
-.evaluateds .container {
+.films .container {
     width: 550px;
     height: 300px;
 }
 
-.evaluateds .img {
+.films .img {
     height: 300px;
 }
 
-.evaluateds .img img {
+.films .img img {
     height: 100%;
 }
 
-.evaluateds .texts h3 {
+.films .texts h3 {
     font-weight: 800;
     font-size: 26px;
 }
 
-.evaluateds .texts .star {
+.films .texts .star {
     background: url(../../images/star.png) repeat-x;
     height: 20px;
     width: 89px;
     margin-bottom: 11px;
 }
 
-.evaluateds .navigation input[type="radio"] {
+.films .navigation input[type="radio"] {
     margin-right: 5px;
     appearance: none;
     background-color: #fff;
@@ -45,13 +45,13 @@ h2 {
     border-radius: 50%;
 }
 
-.evaluateds .navigation input[type="radio"]:checked {
+.films .navigation input[type="radio"]:checked {
     background-color: #E9FF00;
     width: 16px;
     height: 16px;
 }
 
-.evaluateds .navigation button {
+.films .navigation button {
     background: url(../../images/arrow.svg) no-repeat center;
     cursor: pointer;
     width: 40px;
@@ -59,12 +59,12 @@ h2 {
     border: none;
 }
 
-.evaluateds .navigation button:nth-child(1) {
+.films .navigation button:nth-child(1) {
     rotate: 180deg;
 }
 
 @media ((max-width: 1200px)) {
-    .evaluateds {
+    .films {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 80px 40px;
@@ -72,15 +72,15 @@ h2 {
 }
 
 @media (max-width: 450px) {
-    .evaluateds {
+    .films {
         padding: 40px 25px;
     }
 
-    .evaluateds .container {
+    .films .container {
         width: 300px;
     }
 
-    .evaluateds .navigation {
+    .films .navigation {
         display: flex;
         align-items: center;
         justify-content: space-between;

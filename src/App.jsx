@@ -1,8 +1,8 @@
 import React from "react"
 
 import Banner from "./Component/Banner/Banner"
-import Cards from "./Component/Cards/Cards"
-import Evaluateds from "./Component/Evaluateds/Evaluateds"
+import Films from "./Component/Films/Films"
+import Characters from "./Component/Characters/Characters"
 import Subscription from "./Component/Subscription/Subscription"
 import Footer from "./Component/Footer/Footer"
 import TopButton from "./Component/TopButton/TopButton"
@@ -12,8 +12,8 @@ export default function App() {
   return (
     <>
       <Banner />
-      <Cards />
-      <Evaluateds />
+      <Films />
+      <Characters />
       <Subscription />
       <Footer />
       <TopButton />

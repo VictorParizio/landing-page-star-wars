@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
-import './Evaluated.css'
+import './Films.css'
 
-export default function Evaluateds() {
+export default function Films() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [showSlide, setShowSlide] = useState(false);
     const [showList, setShowList] = useState(false);
@@ -55,8 +55,8 @@ export default function Evaluateds() {
     }, []);
 
     return (
-        <section className="evaluateds">
-            <h2 id="evaluated">Filmes</h2>
+        <section className="films">
+            <h2 id="films">Films</h2>
             {showList && (
                 <div className="info">
                     {films.map((film, index) => (

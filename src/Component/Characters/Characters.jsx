@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
-import './Card.css'
+import './Characters.css'
 
-export default function Cards() {
+export default function Characters() {
     const [peoples, setPeople] = useState([]);
 
     useEffect(() => {
@@ -14,8 +14,8 @@ export default function Cards() {
     }, []);
 
     return (
-        <section className="cards">
-            <h2 id="cards">Characters</h2>
+        <section className="characters">
+            <h2 id="characters">Characters</h2>
             <div className="container">
                 {peoples.map((people, index) => (
                     <div className="card" key={index}>

@@ -10,8 +10,8 @@ export default function Header() {
 
             <nav className="desktop">
                 <ul>
-                    <li><a href="#cards">Cards</a></li>
-                    <li><a href="#evaluated">+ Evaluated</a></li>
+                    <li><a href="#films">Films</a></li>
+                    <li><a href="#characters">Characters</a></li>
                     <li><a href="#subscription">Subscription</a></li>
                     <li><a href="#footer">Contact</a></li>
                 </ul>
