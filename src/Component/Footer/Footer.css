@@ -1,57 +1,101 @@
 .footer {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: #ffffff;
     position: relative;
 }
 
-.footer p {
-    font-size: 22px;
-    letter-spacing: 0.04em;
-    color: #000000;
+.footer .address {
+    display: grid;
 }
 
-.footer .empresa {
+.footer nav a {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50px;
+    width: 200px;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    color: #000000;
+    transition: ease-in-out .3s;
+}
+
+.footer a:hover {
+    background: #000000;
+    text-shadow: -1px -1px 0 #FFF212, 1px -1px 0 #FFF212, -1px 1px 0 #FFF212, 1px 1px 0 #FFF212;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.footer .empresa {
     position: absolute;
     width: 258px;
     height: 47px;
     left: calc(50% - 129px);
     bottom: -25px;
-    background: #E9FF00;
+    background: #FFF212;
+    justify-content: center;
 }
 
-.footer .empresa h2 {
-    font-weight: 700;
-    font-size: 22px;
-    margin: 0;
-    letter-spacing: 0.04em;
-    color: #000000;
+.footer img {
+    height: 70px;
+    width: 300px;
+    background: #000000;
+    padding: 10px 20px;
 }
 
 .footer .attribution {
     position: absolute;
     left: 0;
-    bottom: -75px;
+    bottom: -120px;
     text-align: center;
     height: 50px;
     width: 100%;
-    padding: 13px;
 }
 
 .footer .attribution a {
     font-weight: 700;
     letter-spacing: 0.04em;
-    color: #E9FF00;
+    color: #FFF212;
 }
 
-@media (max-width: 900px){
+.footer .attribution a:hover {
+    color: #000000;
+    text-shadow: -1px -1px 0 #FFF212, 1px -1px 0 #FFF212, -1px 1px 0 #FFF212, 1px 1px 0 #FFF212;
+}
+
+@media (max-width: 1020px) {
+    .footer {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 856px) {
     .footer{
-        display: grid;
-        justify-content: center;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer nav ul {
+        flex-wrap: wrap;
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer nav ul {
+        width: 200px;
+    }
+
+    .footer p {
+        width: 180px;
     }
 }

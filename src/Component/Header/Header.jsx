@@ -5,7 +5,7 @@ import HamburgerMenu from "../Hamburger/Hamburger";
 
 export default function Header() {
     return (
-        <section className="header">
+        <section className="header container">
             <img src={logo} alt="" />
 
             <nav className="desktop">

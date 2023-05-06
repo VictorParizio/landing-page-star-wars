@@ -12,7 +12,7 @@
 .successMessage div {
     background: rgb(0, 0, 0);
     box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.2);
-    border-left: 14px solid #E9FF00;
+    border-left: 14px solid #FFF212;
     border-radius: 10px;
 
     position: absolute;
@@ -51,7 +51,7 @@
 .successMessage div {
     background: rgb(0, 0, 0);
     box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.2);
-    border-left: 14px solid #E9FF00;
+    border-left: 14px solid #FFF212;
     border-radius: 10px;
 
     position: absolute;
@@ -80,7 +80,7 @@
     width: 60px;
     height: 60px;
     padding: 10px;
-    border: 2px solid #E9FF00;
+    border: 2px solid #FFF212;
     border-radius: 50%;
 }
 
@@ -99,7 +99,7 @@
     width: 60px;
     height: 60px;
     padding: 10px;
-    border: 2px solid #E9FF00;
+    border: 2px solid #FFF212;
     border-radius: 50%;
 }
 

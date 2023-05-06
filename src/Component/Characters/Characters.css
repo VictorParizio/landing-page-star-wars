@@ -1,5 +1,8 @@
 .characters h2 {
     margin-bottom: 150px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
 }
 
 .characters .container {
@@ -43,7 +46,7 @@
     width: 120px;
     border-radius: 20px;
     border: 4px solid rgb(0, 0, 0);
-    background: rgb(233, 255, 0);
+    background: #FFF212;
 
     color: rgb(0, 0, 0);
     font-weight: 600;
@@ -51,9 +54,10 @@
 }
 
 @media (max-width: 740px) {
-    .characters{
+    .characters {
         padding: 30px;
     }
+
     .characters h2 {
         font-size: 40px;
     }

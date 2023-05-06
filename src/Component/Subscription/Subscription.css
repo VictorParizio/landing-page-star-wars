@@ -25,7 +25,7 @@
     padding: 10px 16px;
     width: 244px;
     height: 42px;
-    border: 1px solid #E9FF00;
+    border: 1px solid #FFF212;
     border-radius: 20px;
     background-color: transparent;
     color: white;
@@ -44,7 +44,7 @@
     height: 42px;
     color: black;
     font-weight: 800;
-    background: #E9FF00 url(../../images/seta.svg) no-repeat center;
+    background: #FFF212 url(../../images/seta.svg) no-repeat center;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -52,7 +52,7 @@
 }
 
 .subscription form button:hover {
-    box-shadow: 0 0 20px rgb(255, 255, 0);
+    box-shadow: 0 0 20px #FFF212
 }
 
 @media (max-width: 1130px) {

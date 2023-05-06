@@ -19,7 +19,7 @@
     font-size: 40px;
     text-align: start;
     padding-left: 5px;
-    border-left: 8px solid #E9FF00;
+    border-left: 8px solid #FFF212;
 }
 
 .carousel .info .slide h2~p {
@@ -46,7 +46,7 @@
 }
 
 .carousel .navigation input[type="radio"]:checked {
-    background-color: #E9FF00;
+    background-color: #FFF212;
     width: 15px;
     height: 15px;
 }
