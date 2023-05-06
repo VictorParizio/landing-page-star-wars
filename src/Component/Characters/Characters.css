@@ -6,7 +6,6 @@
 }
 
 .characters .container {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     grid-gap: 120px 40px;

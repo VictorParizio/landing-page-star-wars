@@ -7,8 +7,12 @@
 
 .films .info {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 50px 40px;
+}
+
+.films .info~div{
+    height: 50%;
 }
 
 .films h3 {
@@ -24,47 +28,24 @@
 }
 
 .films .info img {
-    height: 300px;
+    height: 200px;
     float: left;
     margin: 5px 20px 10px 0;
 }
 
 .films .info p {
-    width: 500px;
     text-align: justify;
-}
-
-@media (max-width: 1220px) {
-    .films .info {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
-    .films .info img {
-        height: 200px;
-    }
-
-    .films .info p {
-        width: 300px;
-    }
 }
 
 @media (max-width: 817px) {
     .films .info {
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     }
-
-    .films .info p {
-        width: 500px;
-    }
 }
 
 @media (max-width: 650px) {
     .films .info {
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
-
-    .films .info p {
-        width: 400px;
     }
 }
 
@@ -74,11 +55,7 @@
         height: 630px;
         position: relative;
     }
-
-    .films .info img {
-        height: 200px;
-    }
-
+    
     .films .info p {
         width: 300px;
     }
@@ -89,7 +66,7 @@
         width: 300px;
 
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: space-between;
     }
 
