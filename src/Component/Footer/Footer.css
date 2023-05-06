@@ -23,7 +23,6 @@
 
 .footer a:hover {
     background: #000000;
-    text-shadow: -1px -1px 0 #FFF212, 1px -1px 0 #FFF212, -1px 1px 0 #FFF212, 1px 1px 0 #FFF212;
 }
 
 .footer p {
