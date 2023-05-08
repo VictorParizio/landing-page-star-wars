@@ -8,8 +8,8 @@ export default function Modal({ closeModal }) {
             <div>
                 <span className="close" onClick={closeModal}>&times;</span>
                 <img src={check} alt="check" />
-                <h2>Sucesso!</h2>
-                <p>sua inscrição foi realizada e em breve você começará a receber nossas notícias.</p>
+                <h2>Success!</h2>
+                <p>Your registration has been completed and you will soon start receiving our news.</p>
             </div>
         </div>
     );
