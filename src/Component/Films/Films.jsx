@@ -74,12 +74,12 @@ export default function Films() {
                 <>
                     <div className="info">
                         {films.length > 0 &&
-                            <div>
+                            <>
                                 <h3>{films[currentSlide].title}</h3>
                                 <div className="star"></div>
                                 <img src={`https://starwars-visualguide.com/assets/img/films/${currentSlide + 1}.jpg`} alt={films[currentSlide].title} />
                                 <p>{films[currentSlide].opening_crawl}</p>
-                            </div>
+                            </>
                         }
                     </div>
 
