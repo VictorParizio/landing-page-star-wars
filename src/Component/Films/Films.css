@@ -11,7 +11,7 @@
     grid-gap: 50px 40px;
 }
 
-.films .info~div{
+.films .info~div {
     height: 50%;
 }
 
@@ -49,13 +49,13 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .films {
         padding: 0 25px;
         height: 630px;
         position: relative;
     }
-    
+
     .films .info p {
         width: 300px;
     }
@@ -95,61 +95,5 @@
 
     .films .navigation button:nth-child(1) {
         rotate: 180deg;
-    }
-}
-
-.auto-slide {
-    -webkit-animation-name: auto-slide;
-    -moz-animation-name: auto-slide;
-    animation-name: auto-slide;
-
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    animation-duration: 1s;
-
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    transform: translateX(100%);
-}
-
-@-webkit-keyframes auto-slide {
-    from {
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-
-    to {
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-}
-
-@-moz-keyframes auto-slide {
-    from {
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-
-    to {
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-}
-
-@keyframes auto-slide {
-    from {
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-
-    to {
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        transform: translateX(0%);
     }
 }

@@ -89,7 +89,7 @@ export default function Films() {
                                 <input
                                     key={index}
                                     type="radio"
-                                    name="slider"
+                                    name="film"
                                     value={index}
                                     checked={currentSlide === index}
                                     onChange={handleRadioChange}
