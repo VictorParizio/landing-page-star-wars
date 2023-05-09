@@ -68,12 +68,12 @@ export default function Subscription() {
     return (
         <section className="subscription" id="subscription">
             <div>
-                <h2>Assine nossa</h2>
+                <h2>Subscribe</h2>
                 <span>newsletter</span>
             </div>
             <form onSubmit={handleSubmit}>
                 <label>
-                    <input type="text" placeholder="Nome" value={name} onChange={handleNameChange} ref={nameRef} />
+                    <input type="text" placeholder="Name" value={name} onChange={handleNameChange} ref={nameRef} />
                     {nameError && <div className="error">{nameError}</div>}
                 </label>
                 <label>
